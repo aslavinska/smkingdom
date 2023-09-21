@@ -48,13 +48,13 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-   # 'home',
-   # 'products',
-   # 'bag',
-# 'checkout',
-  #  'profiles',
+    'home',
+    'products',
+    'bag',
+    'checkout',
+    'profiles',
     #other
-    # 'crispy_forms',
+     'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -86,13 +86,13 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
-             #   'bag.contexts.bag_contents',
+                'bag.contexts.bag_contents',
             ],      
                     
-        #    'builtins': [
-         #       'crispy_forms.templatetags.crispy_forms_tags',
-          #      'crispy_forms.templatetags.crispy_forms_field',
-           # ]
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
@@ -128,17 +128,17 @@ WSGI_APPLICATION = 'smkingdom.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#if 'DATABASE_URL' in os.environ:
-#    DATABASES = {
-#        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-#    }
-#else:
-DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
+else:
+    DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            }
+        }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
