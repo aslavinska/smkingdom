@@ -27,6 +27,7 @@ class ProductAdmin(admin.ModelAdmin):
         'program',
         'has_sizes',
         'price',
+        'rating',
         'image_url',
         'image',
     )
