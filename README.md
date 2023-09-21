@@ -1,8 +1,8 @@
 # Silver Moon Kingdom
 
-The official website of a British - Latvian Artist Sailor Shushu online shop. This page is created for Sailor Shushu's fans, as a business to client model and be able to purchaise limited eddition items of her design, if other artist will decide to collaborate, there is an option for more artists to be added and their prints can be sold too.  
- - ! Due to some unfortinate tutoring, the initial project structure callapsed beyond fixing, so the canban board stays with the projext 5 folder and this is copy paste from the project 5 (github link)[https://github.com/aslavinska/project5]
- - Due to time limititation it was decided to not copy and paste everything but to keep it within two repositories. 
+The official website of a British - Latvian Artist Sailor Shushu online shop Silver Moon Kingdom. This page is created for Sailor Shushu's fans, as a business to client model and be able to purchaise limited eddition items of her design, if other artist will decide to collaborate, there is an option for more artists to be added and their prints can be sold too.  
+ - ! Due to some unfortinate tutoring, the initial project structure callapsed beyond fixing, so the canban board stays with the project 5 folder and this is a copy paste from the project 5 (github link)[https://github.com/aslavinska/project5]
+ - Due to time limititation it was decided not to copy and paste everything but to keep it within two repositories. 
 
 
 ![Responsive](static/assets/responsive.jpg)
@@ -40,10 +40,10 @@ Stripe is used for handeling payments, webhooks setup can be found below:
 # Features
 
 - **Navigation**
-    - Featuring at the top of the main page, the name of the artist Sailor Shushu and above that is the main menu.
-    - The other navigation links are: All Products, Pins & Stickers and Prints as a separate option , Login/Logout and Register options. 
+    - Featuring at the top of the main page, the name of the online shop Silver Moon Kingdom.
+    - The other navigation links are: All Products, Pins & Stickers and Prints, Login/Logout and Register options. 
     - The navigation is in a font visible and readable for a user and color that contrasts with the background. 
-    - The navigation clearly tells to the user the name of the app and website, and makes the different sections of information easy to find. 
+    - The navigation clearly tells to the user the name of the website, and makes the different sections of information easy to find. 
     - Search bar is available on the top of the page
     - In the Footer users can find link to the facebook page of the shop and subscripe for newsletter. 
 
@@ -53,7 +53,7 @@ Stripe is used for handeling payments, webhooks setup can be found below:
 
     ![Menu Bar](static/assets/menuprintlogged.jpg)
 
-- **The Header**
+- **The Main Page**
     - The header shows the name of the app, using the other color chosen: Shade of Orange with hand writing type of font theme. 
     - Thi section provides the user with clear information about what the site is and who is the targetted audience. 
 
@@ -61,9 +61,11 @@ Stripe is used for handeling payments, webhooks setup can be found below:
     - One-time sale model is used
     - Business to client model, where the art creater sales her art directly to her fans. 
 
-- **Print Section**
+- **Product Management Section**
     - The about section gives details background about artist and motivation behind each art.
     - Admin can edit, delete and add new art prints without login to the admin page. 
+
+- **Basket Section**
 
 -**Login/Logout/Register**
 
@@ -80,22 +82,15 @@ Stripe is used for handeling payments, webhooks setup can be found below:
 -**User Panel**
     - Here users will be able to find their details username and email and commission requests that they have submitted in the Commission Request menu. 
 
-![UserPanel](static/assets/userpanel.jpg)
-
-    - When user click on edit button the user can edit their commission request
-
-![UserPanelEdit](static/assets/userpaneleditcom.jpg)
-
-    - The User will be redirected to the final notification message before redirecting back to the user panel main page.
-
 ![UserPanelEditConfirm](static/assets/userpaneleditcomconfirm.jpg)
+
 -**Footer**
- - The fotter includes social media links, so users can find SailorShushu's twitter and instagram pages.
+ - The fotter includes social media links to the facebook store page and subscription to the mail service.
     
     ![ContactUsScr](static/assets/footer.jpg)
 
 # Project Agile Kanban board:
- - The project kanban board can be found [here](https://github.com/users/aslavinska/projects/2/views/1)
+ - The project kanban board can be found [here](https://github.com/users/aslavinska/projects/3/views/1)
 
 # Testing
  - I have tested this page in brosers: Chrome and Firefox.
@@ -212,9 +207,9 @@ The site was deployed to Heroku using followin steps:
 The lie link can be found here - [Silver Moon Kingdom](https://silvermoonkingdom-c796635f5b8d.herokuapp.com/).
 
 # Technologies used
-    - [ Cookiecutter ](https://cookiecutter-django.readthedocs.io/en/latest/). 
-    - mailgun for emails 
-    - [Stripe Subscription docs](https://stripe.com/docs/billing/subscriptions/overview)
+    - [Cookiecutter](https://cookiecutter-django.readthedocs.io/en/latest/). 
+    - mailchimp [doc](https://mailchimp.com/developer/marketing/docs/fundamentals/) 
+    - [Stripe docs](https://stripe.com/docs?locale=en-GB)
 
 
 # Credits
