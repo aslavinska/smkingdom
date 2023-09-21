@@ -1,6 +1,8 @@
 # Silver Moon Kingdom
 
 The official website of a British - Latvian Artist Sailor Shushu online shop. This page is created for Sailor Shushu's fans, as a business to client model and be able to purchaise limited eddition items of her design, if other artist will decide to collaborate, there is an option for more artists to be added and their prints can be sold too.  
+ - ! Due to some unfortinate tutoring, the initial project structure callapsed beyond fixing, so the canban board stays with the projext 5 folder and this is copy paste from the project 5 (github link)[https://github.com/aslavinska/project5]
+ - Due to time limititation it was decided to not copy and paste everything but to keep it within two repositories. 
 
 
 ![Responsive](static/assets/responsive.jpg)
