@@ -5,7 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Product, Category
-from .forms import ProductForm
+from .forms import ProductForm, ArtistForm
 
 # Create your views here.
 
@@ -137,3 +137,14 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+@login_required
+def add_artist(request):
+    """ Add an artist """
+    form = ArtistForm()
+    template = 'products/add_artist.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
