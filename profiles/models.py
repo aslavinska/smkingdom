@@ -19,7 +19,6 @@ class UserProfile(models.Model):
     default_county = models.CharField(max_length=80, null=True, blank=True)
     default_postcode = models.CharField(max_length=20, null=True, blank=True)
     default_country = CountryField(blank_label='Country', null=True, blank=True)
-    stripe_customer_id = models.CharField(max_length=50)
 
     def __str__(self):
         return self.user.username
