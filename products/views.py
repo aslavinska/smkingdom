@@ -141,10 +141,20 @@ def delete_product(request, product_id):
 @login_required
 def add_artist(request):
     """ Add an artist """
-    form = ArtistForm()
-    template = 'products/add_artist.html'
-    context = {
-        'form': form,
-    }
+    if request.method == "Post":
+        form = ArtistForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added the artist')
+            return redirect(reverse('add_artist'))
+        else:
+            messages.error(request, 'Failed to add an artist. Please ensure the form is valid.')
+    else:
+
+        form = ArtistForm()
+        template = 'products/add_artist.html'
+        context = {
+            'form': form,
+        }
 
     return render(request, template, context)
