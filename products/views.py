@@ -141,7 +141,7 @@ def delete_product(request, product_id):
 @login_required
 def add_artist(request):
     """ Add an artist """
-    if request.method == "Post":
+    if request.method == "POST":
         form = ArtistForm(request.POST)
         if form.is_valid():
             form.save()
