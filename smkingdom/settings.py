@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY','')
 DEBUG= True
 
 
-ALLOWED_HOSTS = ['8000-aslavinska-smkingdom-67dzbiem3bv.ws-eu104.gitpod.io','localhost']
+ALLOWED_HOSTS = ['8000-aslavinska-smkingdom-67dzbiem3bv.ws-eu104.gitpod.io','sm-kingdom-8e52019dc777.herokuapp.com','localhost']
 
 
 # Application definition
