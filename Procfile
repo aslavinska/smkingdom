@@ -1,1 +1,1 @@
-web: gunicorn sm-kingdom.wsgi:application
+web: gunicorn smkingdom.wsgi:application
