@@ -3,8 +3,8 @@ html {
 }
 
 body {
+    background: url('/media/background.jpg') no-repeat center center fixed;
     background-color: #fce8fd;
-    background-image: "media/background.jpg";
     background-size: cover;
     height: calc(100vh - 164px);
     color: #000000;
