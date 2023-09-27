@@ -63,19 +63,16 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+   # printoptions = get_object_or_404(PrintOptions, pk=product_id)
+    prints = PrintOptions.objects.filter(printname=product)
 
     context = {
         'product': product,
+        #'printoptions': printoptions,
+        'prints': prints,
     }
 
     return render(request, 'products/product_detail.html', context)
-
-def print_detail(request, product_id):
-    """ A view to show individual product details """
-
-    prints = get_object_or_404(PrintOptions, pk=product_id)
-
-    return prints
 
 
 @login_required
