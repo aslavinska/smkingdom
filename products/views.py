@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Product, Category, PrintOptions
 from .forms import ProductForm, ArtistForm
 
 # Create your views here.
@@ -63,9 +63,11 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    printoptions = get_object_or_404(PrintOptions, pk=print_id)
 
     context = {
         'product': product,
+        'printoptions': printoptions,
     }
 
     return render(request, 'products/product_detail.html', context)
