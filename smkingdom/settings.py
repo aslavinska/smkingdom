@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY','')
 DEBUG= True
 
 
-ALLOWED_HOSTS = ['8000-aslavinska-smkingdom-67dzbiem3bv.ws-eu105.gitpod.io','sm-kingdom-8e52019dc777.herokuapp.com','localhost']
+ALLOWED_HOSTS = [ '8000-aslavinska-smkingdom-67dzbiem3bv.ws-eu104.gitpod.io','sm-kingdom-8e52019dc777.herokuapp.com','localhost']
 
 
 # Application definition
@@ -184,11 +184,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = (os.path.join(BASE_DIR,'media'))
 
 if 'USE_AWS' in os.environ:
-    # Cache control
-    AWS_S3_OBJECT_PARAMETERS = {
-        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
-        'CacheControl': 'max-age=94608000',
-    }
+    # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'silvermoonkingdom'
     AWS_S3_REGION_NAME = 'eu-west-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
