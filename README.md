@@ -1,41 +1,34 @@
 # Silver Moon Kingdom
 
-The official website of a British - Latvian Artist Sailor Shushu online shop Silver Moon Kingdom. This page is created for Sailor Shushu's fans, as a business to client model and be able to purchaise limited eddition items of her design, if other artist will decide to collaborate, there is an option for more artists to be added and their prints can be sold too.  
- - ! Due to some unfortinate tutoring, the initial project structure callapsed beyond fixing, so the canban board stays with the project 5 folder and this is a copy paste from the project 5 (github link)[https://github.com/aslavinska/project5]
- - Due to time limititation it was decided not to copy and paste everything but to keep it within two repositories. 
+The official website of a British Artist Sailor Shushu online shop Silver Moon Kingdom. This page is created for Sailor Shushu's fans, as a business to client model and be able to purchaise limited eddition items of her design, if other artist will decide to collaborate, there is an option for more artists to be added and their prints can be sold too.  
+ - ! Due to some unfortinate tutoring, the initial project structure callapsed beyond fixing, so the canban board stays with the project 5 folder and this is a copy paste from the project 5 [github link](https://github.com/aslavinska/project5)
+ - Due to time limititation it was decided not to copy and paste everything but to keep it within the two repositories. 
 
 
 ![Responsive](static/assets/responsive.jpg)
 
 # Web Marketing 
 
-Who are your users?
+* Who are your users?
     - Sailor Shushu Fans
-Which online platforms would you find lots of your users?
+* Which online platforms would you find lots of your users?
     - Instagram and Facebook
-What do your users need? 
+* What do your users need? 
     - Cool art products, unique designs in the artists style.
-Would your business run sales or offer discounts? 
+* Would your business run sales or offer discounts? 
     - There is a potential to have deals and discounts and discount codes with stripe. 
-What are the goals of your business?
+* What are the goals of your business?
     - To sale art and unique stickers and pins made in UK. 
-Which marketing strategies would offer the best ways to meet those goals?
+* Which marketing strategies would offer the best ways to meet those goals?
     - Seller to Client direct advertismenet without 3rd party. 
-Would your business have a budget to spend on advertising? 
+* Would your business have a budget to spend on advertising? 
     - No, will work with free or low cost options to market itself. 
 
 - **Facebook Business page**
-This is a mock facebook page that could be deleted by Facebook, as the business is not real. 
+
+- This is a mock facebook page that could be deleted by Facebook, as the business is not real. 
 ![Facebook](media/facebookbusinesspage.png)
 
-# MailChimp
-MailChimp is used for subscription to news content and email distribution, the setup from the user panel can be found below:
-![Mailchimp](media/mailchimp.jpg)
-
-# Stripe
-- **Webhooks**
-Stripe is used for handeling payments, webhooks setup can be found below: 
-![Webhooks](media/webhooks.jpg)
 
 # Features
 
@@ -88,6 +81,16 @@ Stripe is used for handeling payments, webhooks setup can be found below:
  - The fotter includes social media links to the facebook store page and subscription to the mail service.
     
     ![ContactUsScr](static/assets/footer.jpg)
+
+
+# MailChimp
+MailChimp is used for subscription to news content and email distribution, the setup from the user panel can be found below:
+![Mailchimp](media/mailchimp.jpg)
+
+# Stripe
+- **Webhooks**
+Stripe is used for handeling payments, webhooks setup can be found below: 
+![Webhooks](media/webhooks.jpg)
 
 # Project Agile Kanban board:
  - The project kanban board can be found [here](https://github.com/users/aslavinska/projects/3/views/1)
@@ -165,6 +168,11 @@ Stripe is used for handeling payments, webhooks setup can be found below:
 
 - User Story 18 Edit Commission Request 
     1. Verified that only commission request author can edit the request from, all fields can be modified. 
+
+- User Story 18 Edit Complete Order Request 
+    1. Verified that only order request can be completed using stripe.
+
+    ![Order Complete](static/assets/complete_order.png)
     
  ## Bugs 
     - No known bugs
