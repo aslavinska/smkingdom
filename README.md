@@ -53,6 +53,7 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
     - The about section gives details background about artist and motivation behind each art.
     - Admin can edit, delete and add new art prints without login to the admin page. 
 
+
 - **Basket Section**
 - Shopping bag
    ![shopping bag](media/Shopping_bag.png)
