@@ -40,11 +40,6 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
     - Search bar is available on the top of the page
     - In the Footer users can find link to the facebook page of the shop and subscripe for newsletter. 
 
-    ![Menu Bar](static/assets/menuprint.jpg)
-
-    After User loges in, the menu panel will look like this: 
-
-    ![Menu Bar](static/assets/menuprintlogged.jpg)
 
 - **The Main Page**
     - The header shows the name of the app, using the other color chosen: Shade of Orange with hand writing type of font theme. 
@@ -59,6 +54,13 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
     - Admin can edit, delete and add new art prints without login to the admin page. 
 
 - **Basket Section**
+- Shopping bag
+   ![shopping bag](media/Shopping_bag.png)
+
+
+-Checkout
+   ![checkout](media/checkout.png)
+
 
 -**Login/Logout/Register**
 
@@ -187,6 +189,8 @@ Stripe is used for handeling payments, webhooks setup can be found below:
     - Every page has been checked and no errors or warnings have been highlighted. 
 - CSS 
     - No errors were returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/).
+    ![CSS Validator](static/assets/cssvalidator.jpg)
+
 - Accessibility
     - I confimed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools. 
     ![Accessibility](static/assets/accessibility.jpg)

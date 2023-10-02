@@ -4,37 +4,56 @@ from django.shortcuts import get_object_or_404
 from products.models import Product, PrintOptions
 
 def bag_contents(request):
-
+    print("IN CONTEXT")
     bag_items = []
     total = 0
     product_count = 0
     bag = request.session.get('bag', {})
-
+    print('bag here: ', bag)
     for item_id, item_data in bag.items():
-        if isinstance(item_data, int):
+        print("HERE1")
+        product = get_object_or_404(Product, pk=item_id)
+        if isinstance(item_data,int):
             product = get_object_or_404(Product, pk=item_id)
-            prints = PrintOptions.objects.filter(printname=product)
             total += item_data * product.price
             product_count += item_data
             bag_items.append({
                 'item_id': item_id,
                 'quantity': item_data,
                 'product': product,
-                'prints': prints,
             })
         else:
-            product = get_object_or_404(Product, pk=item_id)
-            prints = PrintOptions.objects.filter(printname=product)
-            for size, quantity in item_data['items_by_size'].items():
-                total += quantity * product.price
-                product_count += quantity
-                bag_items.append({
-                    'item_id': item_id,
-                    'quantity': quantity,
-                    'product': product,
-                    'prints':prints,
-                    'size': size,
-                })
+            for size, size_data in item_data['items_by_size'].items():
+                print("HERE2", size, size_data)
+                if isinstance(item_data,int):
+                    print("HERE2.2")
+
+                    product = get_object_or_404(Product, pk=item_id)
+                    total += item_data * product.price
+                    product_count += item_data
+                    bag_items.append({
+                        'item_id': item_id,
+                        'quantity': item_data,
+                        'product': product,
+                    })
+                else:
+                    product = get_object_or_404(Product, pk=item_id)
+                    for prints, quantity in size_data['prints'].items():
+                        print("HERE3")
+                        print(prints,quantity)
+                        
+                        total += quantity * product.price
+                        product_count += quantity
+                        bag_items.append({
+                                'item_id': item_id,
+                                'quantity': quantity,
+                                'product': product,
+                                'prints':prints,
+                                'size': size,
+                            })
+
+
+
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)

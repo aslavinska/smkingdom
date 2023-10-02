@@ -79,6 +79,7 @@ def checkout(request):
                                 product_size=size,
                                 prints=prints,
                             )
+                            print("order_line_item 1 :", order_line_item)
                             order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
