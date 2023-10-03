@@ -25,14 +25,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY','')
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG= True
+DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = True
 
 
-ALLOWED_HOSTS = [ '8000-aslavinska-smkingdom-67dzbiem3bv.ws-eu105.gitpod.io','sm-kingdom-8e52019dc777.herokuapp.com','localhost']
+ALLOWED_HOSTS = ['8000-aslavinska-smkingdom-67dzbiem3bv.ws-eu105.gitpod.io', 'sm-kingdom-8e52019dc777.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -53,9 +53,9 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
-    #other
-     'crispy_forms',
-     'storages',
+    # other
+    'crispy_forms',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -77,7 +77,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
-            os.path.join(BASE_DIR, 'templates','allauth'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -88,8 +88,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
-            ],      
-                    
+            ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
                 'crispy_forms.templatetags.crispy_forms_field',
@@ -112,7 +111,7 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
-#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
@@ -181,12 +180,12 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = (os.path.join(BASE_DIR,'media'))
+MEDIA_ROOT = (os.path.join(BASE_DIR, 'media'))
 
 if 'USE_AWS' in os.environ:
     # Cache control
     AWS_S3_OBJECT_PARAMETERS = {
-        'Expires' : 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
 

@@ -7,14 +7,14 @@ class ArtistAdmin(admin.ModelAdmin):
         'background',
         'mainartstyle',
         'email',
-    )
+    ) 
 
 
 class CategoryAdmin(admin.ModelAdmin):
         list_display = (
         'friendly_name',
         'name',
-    )
+    ) 
 
 class ProductAdmin(admin.ModelAdmin):
         list_display = (
@@ -42,7 +42,7 @@ class PrintOptionsAdmin(admin.ModelAdmin):
         'has_mattfinish',
         'has_signature',
         
-    )
+    ) 
 
 admin.site.register(Artist, ArtistAdmin)
 admin.site.register(Category, CategoryAdmin)

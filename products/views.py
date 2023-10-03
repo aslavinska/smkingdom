@@ -140,6 +140,7 @@ def delete_product(request, product_id):
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
 
+
 @login_required
 def add_artist(request):
     """ Add an artist """
