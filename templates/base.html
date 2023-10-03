@@ -95,7 +95,6 @@
                             <a href="{% url 'add_artist' %}" class="dropdown-item">Artist Management</a>
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                            <a href=" #" class="dropdown-item">My Subscription</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
                             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -133,7 +132,7 @@
         </div>
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-black text-white">
-                <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
+                <h4 class="logo-font my-1">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>
             </div>
         </div>
     </header>

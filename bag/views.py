@@ -12,7 +12,6 @@ def view_bag(request):
 
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
-
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
@@ -28,46 +27,17 @@ def add_to_bag(request, item_id):
             if size in bag[item_id]['items_by_size'].keys():
                 if prints in bag[item_id]['items_by_size'][size]['prints'].keys():
                     bag[item_id]['items_by_size'][size]['prints'][prints] += quantity
-        
                     messages.success(request, f'Updated size {size.upper()} {product.name} {prints} quantity to {bag[item_id]["items_by_size"][size]["prints"][prints]}')
-                    print("bag: ",bag)
-                    print("prints: ",[prints])
                 else:
                     bag[item_id]['items_by_size'][size]['prints'][prints] = quantity
-                    messages.success(request, f'Updated size {size.upper()} {product.name} {prints} quantity to {bag[item_id]["items_by_size"][size]["prints"][prints]}')
-                    print("bag here 1: ",bag)
-             
+                    messages.success(request, f'Updated size {size.upper()} {product.name} {prints} quantity to {bag[item_id]["items_by_size"][size]["prints"][prints]}')          
             else:
-                print("bag2.3: ",bag)
-                print("size: ",size)
-                print("prints: ",prints)
-             #   bag[item_id]['items_by_size'][size] = quantity
-               # bag[item_id] = {'items_by_size': {size:  {'prints': {prints : quantity} }}}
-               # print("bag2.1: ",bag)
-              #  messages.success(request, f'Added size {size.upper()} {product.name}  {prints} to your bag')
-                #print("bag2: ",bag)
-            #                    print("bag HERE C : ",bag)
-                if prints in bag[item_id]['items_by_size'][size]['prints'].keys():
-                        print("bag HERE D : ",bag)
-                        bag[item_id]['items_by_size'][size]['prints'][prints] += quantity
-                
-                        messages.success(request, f'Updated size {size.upper()} {product.name} {prints} quantity to {bag[item_id]["items_by_size"][size]["prints"][prints]}')
-                        print("bag HERE B: ",bag)
-                        print("prints: ",[prints])
-                else:
-                       # bag[item_id]['items_by_size'][size]['prints'][prints] = quantity
-                        print("bag HERE E: ",bag)
-                        bag[item_id] = {'items_by_size': {size:  {'prints': {prints : quantity} }}}
-                        messages.success(request, f'Updated size {size.upper()} {product.name} {prints} quantity to {bag[item_id]["items_by_size"][size]["prints"][prints]}')
-                        print("bag here 1: ",bag)
-
-
-
+                # here the 'size' doesn't exist, so we need to create that entry in the dict:
+                bag[item_id]['items_by_size'][size] = {'prints': {prints: quantity}}
+                messages.success(request, f'Updated size {size.upper()} {product.name} {prints} quantity to {bag[item_id]["items_by_size"][size]["prints"][prints]}')
         else:
-            print("bag HERE F : ",bag)
             bag[item_id] = {'items_by_size': {size:  {'prints': {prints : quantity} }}}
             messages.success(request, f'Added size {size.upper()} {product.name} {prints} to your bag')
-            print("bag3: ",bag)
     else:
         if item_id in list(bag.keys()):
             bag[item_id] += quantity
@@ -82,25 +52,22 @@ def add_to_bag(request, item_id):
 
 def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
-
     product = get_object_or_404(Product, pk=item_id)
-   # prints = PrintOptions.objects.filter(printname=product)
     quantity = int(request.POST.get('quantity'))
     size = None
     if 'product_size' in request.POST:
         size = request.POST['product_size']
-        prints = request.POST['prints']
+        prints = (request.POST.get('prints'))
     bag = request.session.get('bag', {})
-
     if size:
         if quantity > 0:
-            bag[item_id]['items_by_size'][size] = quantity
-            messages.success(request, f'Updated size {size.upper()} {product.name} {prints.name} quantity to {bag[item_id]["items_by_size"][size]}')
+            bag[item_id]['items_by_size'][size]= {'prints': {prints: quantity}}
+            messages.success(request, f'Updated size {size.upper()} {product.name} {prints} quantity to {bag[item_id]["items_by_size"][size]["prints"][prints]}')
         else:
-            del bag[item_id]['items_by_size'][size]
-            if not bag[item_id]['items_by_size']:
+            del bag[item_id]['items_by_size'][size]['prints'][prints]
+            if not bag[item_id]['items_by_size'][size]['prints'][prints]:
                 bag.pop(item_id)
-            messages.success(request, f'Removed size {size.upper()} {product.name} from your bag')
+            messages.success(request, f'Removed size {size.upper()} {product.name} {prints}  from your bag')
     else:
         if quantity > 0:
             bag[item_id] = quantity

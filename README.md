@@ -35,6 +35,8 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
 - **Navigation**
     - Featuring at the top of the main page, the name of the online shop Silver Moon Kingdom.
     - The other navigation links are: All Products, Pins & Stickers and Prints, Login/Logout and Register options. 
+        - When logged as admin also see Product Management drop down and Artist Managemenet drop down. 
+        - When logged in as user see My Profile drop down option. 
     - The navigation is in a font visible and readable for a user and color that contrasts with the background. 
     - The navigation clearly tells to the user the name of the website, and makes the different sections of information easy to find. 
     - Search bar is available on the top of the page
@@ -42,27 +44,44 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
 
 
 - **The Main Page**
-    - The header shows the name of the app, using the other color chosen: Shade of Orange with hand writing type of font theme. 
-    - Thi section provides the user with clear information about what the site is and who is the targetted audience. 
+    - The header shows the name of the app, using the other color chosen: Shade of purple with stylish font theme. 
+    - This section provides the user with clear information about what the site is and who is the targetted audience. 
+    - When clicked on the website name, the user is taken back to the main page. 
+    ![MainPage](media/mainpage.png)
+
 
 - **Online Shop**
     - One-time sale model is used
     - Business to client model, where the art creater sales her art directly to her fans. 
+    - 3 product types are available: Pins, Stickers and Prints. 
+        - For Prints user can select print size and print option.
+        - a buyer can arrange products by price, category, rating or select all products in All products drop down manus.
+        - a buyer can select products based on their group: just see pins, stickers or prints in Products drop down menu. 
 
 - **Product Management Section**
     - The about section gives details background about artist and motivation behind each art.
     - Admin can edit, delete and add new art prints without login to the admin page. 
 
+- **Artist Management Section**
+    - The about section gives details background about artist and motivation behind each art.
+    - Admin can add new artists without login to the admin page. 
+    ![Artist Management ](media/artist_management.png)
+
 
 - **Basket Section**
+
 - Shopping bag
+    - In the shopping bag section a buyer can edit items by inscreasing, decreasing quantity of an item and removing it from the shopping bag.
+
    ![shopping bag](media/Shopping_bag.png)
 
 
--Checkout
+- Checkout
+    - The buyer will be asked to enter shipping details and card payment will be done via Stripe paying system. 
+    - At the checkout the buyer will be able to see the final list of items before the purchaise:
    ![checkout](media/checkout.png)
 
-
+    
 -**Login/Logout/Register**
 
     - Users can register using their email and password, the admin needs to approve every user in  the admin menu
