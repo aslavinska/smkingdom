@@ -25,7 +25,7 @@ class ArtistForm(forms.ModelForm):
     class Meta:
         model = Artist
         fields = '__all__'
-    
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
