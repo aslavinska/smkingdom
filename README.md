@@ -213,8 +213,9 @@ Stripe is used for handeling payments, webhooks setup can be found below:
     ![CSS Validator](static/assets/cssvalidator.jpg)
 
 - Accessibility
-    - I confimed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools. 
-    ![Accessibility](static/assets/accessibility.jpg)
+    - I confimed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse, however the google extension was blocked by my company both in Google and Firefox, so had to use [online tool](https://www.webpagetest.org/result/231003_AiDcGV_AYH/#PWA), my internet at home is not that fast, so I elieve this is affecting the performance speed. 
+
+    ![Accessibility](media/lighthouse_report.jpg)
 - JS 
     - No errors were found using [jshint validator](https://jshint.com/)
 
