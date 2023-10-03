@@ -5,7 +5,7 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
  - Due to time limititation it was decided not to copy and paste everything but to keep it within the two repositories. 
 
 
-![Responsive](static/assets/responsive.jpg)
+![Responsive](media/responsive.jpg)
 
 # Web Marketing 
 
@@ -47,7 +47,7 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
     - The header shows the name of the app, using the other color chosen: Shade of purple with stylish font theme. 
     - This section provides the user with clear information about what the site is and who is the targetted audience. 
     - When clicked on the website name, the user is taken back to the main page. 
-    ![MainPage](media/mainpage.png)
+    ![MainPage](media/mainpage.jpg)
 
 
 - **Online Shop**
@@ -61,6 +61,8 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
 - **Product Management Section**
     - The about section gives details background about artist and motivation behind each art.
     - Admin can edit, delete and add new art prints without login to the admin page. 
+    (Note: the screen below has been zoomed out in order to fit in all fields.)
+    ![Product Management ](media/product_management.jpg)
 
 - **Artist Management Section**
     - The about section gives details background about artist and motivation behind each art.
@@ -82,27 +84,23 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
    ![checkout](media/checkout.png)
 
     
--**Login/Logout/Register**
+- **Login/Logout/Register**
+    - Drop down view:
+        ![loginmenu](media/login.register.jpg)
 
-    - Users can register using their email and password, the admin needs to approve every user in  the admin menu
-    - Users are able to use a google account to register, the website will redirect them to the google sign in menu.
+    - Users can register using their email and password
+    - Register panel:
+    ![register](media/register.jpg)
 
-   ![signin](static/assets/signin.jpg)
+    - Login panel:
+    ![login](media/login.jpg)
 
-    - Register panel: 
+    - Sign out:
+    ![signout](media/signout.jpg)
 
-![register](static/assets/register.jpg)
-    
-
--**User Panel**
-    - Here users will be able to find their details username and email and commission requests that they have submitted in the Commission Request menu. 
-
-![UserPanelEditConfirm](static/assets/userpaneleditcomconfirm.jpg)
-
--**Footer**
- - The fotter includes social media links to the facebook store page and subscription to the mail service.
-    
-    ![ContactUsScr](static/assets/footer.jpg)
+- **Footer**
+    - The fotter includes social media links to the facebook store page and subscription to the email service.
+    ![Footer](media/footer.jpg)
 
 
 # MailChimp
@@ -201,6 +199,9 @@ Stripe is used for handeling payments, webhooks setup can be found below:
 
  ### Solved bugs
     - When users were trying to register the page was returning error 500, that was fixed by adding ACCOUNT_EMAIL_VERIFICATION as none. 
+    - Bug was present when adding prints to the shopping bag no print option can be selected.
+    - Bug when adding prints of the same print option but different size was overwritting the existing entry 
+    - Bug when in the bag view increasing or decreasing number of items would give for prints a new entry that is set to null and is connected to the original entry. 
 
 ## Validator Testing 
 
@@ -231,17 +232,17 @@ No unfixed bugs that have been identified.
 
 The site was deployed to Heroku using followin steps:
 1. Debug flag in setting.py is set to False
-2. X_FRAME_OPTIONS was added to settings.py file and set to sameorigin
+2. AWS settings were added to settings.py file and S3 bucket with user and group permission was created in AWS. 
 3. Everything added, committed and pushed to github. 
 4. Disable collecstatic variable has been removed from the heroku app config vars list
 5. In Heroku project in the deploy tab the main branch has been deployed. 
 
-The lie link can be found here - [Silver Moon Kingdom](https://silvermoonkingdom-c796635f5b8d.herokuapp.com/).
+The live link can be found here - [Silver Moon Kingdom](https://sm-kingdom-8e52019dc777.herokuapp.com/).
 
-# Technologies used
-    - [Cookiecutter](https://cookiecutter-django.readthedocs.io/en/latest/). 
-    - mailchimp [doc](https://mailchimp.com/developer/marketing/docs/fundamentals/) 
-    - [Stripe docs](https://stripe.com/docs?locale=en-GB)
+# Technologies used:
+
+ - mailchimp [doc](https://mailchimp.com/developer/marketing/docs/fundamentals/) 
+ - [Stripe docs](https://stripe.com/docs?locale=en-GB)
 
 
 # Credits
