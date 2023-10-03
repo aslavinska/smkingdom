@@ -29,19 +29,19 @@ body {
 }
 
 .shop-now-button {
-    background: rgb(201, 154, 181);
+    background: rgb(75, 44, 61);
     color: white;
     min-width: 260px;
 }
 
 .btn-black {
-    background: rgb(158, 104, 134);
+    background: rgb(51, 27, 40);
     color: white;
 }
 
 .btn-outline-black {
     background: white;
-    color: rgb(159, 120, 168) !important;
+    color: rgb(52, 19, 59) !important;
     /* use important to override link colors for <a> elements */
     border: 1px solid rgb(201, 154, 181);
 }
@@ -49,7 +49,7 @@ body {
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: rgb(201, 154, 181);
+    background: rgb(85, 65, 76);
     color: white !important;
 }
 
@@ -59,7 +59,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: rgb(201, 154, 181);
+    background: rgb(94, 66, 82);
     color: white;
 }
 
@@ -105,7 +105,7 @@ a.category-badge>span.badge:hover {
 }
 
 input[name='q']::placeholder {
-    color: #aab7c4;
+    color: #687685;
 }
 
 /* ------------------------------- bootstrap toasts */
