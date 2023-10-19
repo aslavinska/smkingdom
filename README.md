@@ -107,7 +107,8 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
  - The project kanban board can be found [here](https://github.com/users/aslavinska/projects/3/views/1)
 
 # Custom Models:
-
+ERD:
+![ERD](media/ERD.png)
 
 # Testing
  - I have tested this page in brosers: Chrome and Firefox.
