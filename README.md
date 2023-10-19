@@ -1,6 +1,7 @@
 # Silver Moon Kingdom
 
 The official website of a British Artist Sailor Shushu online shop Silver Moon Kingdom. This page is created for Sailor Shushu's fans, as a business to client model and be able to purchaise limited eddition items of her design, if other artist will decide to collaborate, there is an option for more artists to be added and their prints can be sold too.  
+
  - ! Due to some unfortinate tutoring, the initial project structure callapsed beyond fixing, so the canban board stays with the project 5 folder and this is a copy paste from the project 5 [github link](https://github.com/aslavinska/project5)
  - This project [link to github](https://github.com/aslavinska/smkingdom)
  - Due to time limititation it was decided not to copy and paste everything but to keep it within the two repositories. 
@@ -9,9 +10,10 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
 ![Responsive](media/responsive.jpg)
 
 # Web Marketing 
+(Application purpose and use)
 
 * Who are your users?
-    - Sailor Shushu Fans
+    - Sailor Shushu Artist Fans
 * Which online platforms would you find lots of your users?
     - Instagram and Facebook
 * What do your users need? 
