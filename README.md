@@ -105,6 +105,9 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
     - The fotter includes social media links to the facebook store page and subscription to the email service.
     ![Footer](media/footer.jpg)
 
+- **Custom 404**
+![Custom 404](media/custom_404.png)
+
 # Project Agile Kanban board:
  - The project kanban board can be found [here](https://github.com/users/aslavinska/projects/3/views/1)
 
