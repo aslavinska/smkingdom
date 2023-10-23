@@ -61,6 +61,11 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
         - a buyer can arrange products by price, category, rating or select all products in All products drop down manus.
         - a buyer can select products based on their group: just see pins, stickers or prints in Products drop down menu. 
 
+- **Product Details**
+    In the product details page now users can see category of the product and an artist name, both can be clicked and the link will open all products under the same category or atist.
+    Also, in prints users can see prinst print options and can select what print options they want before checking out the print. 
+    ![Product Details](media/product_details.png)
+
 - **Product Management Section**
     - The about section gives details background about artist and motivation behind each art.
     - Admin can edit, delete and add new art prints without login to the admin page. 
@@ -201,7 +206,14 @@ ERD:
 - Every page has been manually tested:
     - Screen resize on different devices 
     - Making sure everything is visible and does not look out of place 
-
+    - Validation tools has been used during testing as per the chapter above. 
+    - What has been tested: 
+        - Functionality: every element is functioning as expected. 
+        - User-friendly: easy and clear navigation
+        - bug-free: no bugs were found during the final testing on prod
+        - security: as this is a moch webpage, real live payment stripe varification is not set, but mock works as expected. 
+        - performance: the application renders fast, works accross different browsers ( Chrome, firefox, explorer) and devices (laptop, ipad, iphone), the wev application is accessable anywhere anytime. 
+        
 ## Unfixed Bugs
 
 No unfixed bugs that have been identified. 
@@ -221,6 +233,7 @@ The live link can be found here - [Silver Moon Kingdom](https://sm-kingdom-8e520
 
  - mailchimp [doc](https://mailchimp.com/developer/marketing/docs/fundamentals/) 
  - [Stripe docs](https://stripe.com/docs?locale=en-GB)
+ - Online tool for making [ERD](https://lucid.app/lucidchart/2ab81427-0015-45ff-a653-6a4765c56629/edit?invitationId=inv_43ecbfe2-2ddc-4bd3-a772-28b33d69caaa&page=0_0#)
 
 
 # Credits
