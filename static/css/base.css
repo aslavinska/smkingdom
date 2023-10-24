@@ -190,6 +190,7 @@ input[name='q']::placeholder {
     .container {
         max-width: 80%;
     }
+
 }
 
 /* Allauth form formatting */
@@ -338,5 +339,10 @@ input[name='q']::placeholder {
     .increment-qty,
     .decrement-qty {
         padding: .25rem .5rem !important;
+    }
+    /* Mailchimp */
+    #mc_embed_signup {
+        font: 13px Helvetica, Arial, sans-serif;
+        width: 300px;
     }
 }
