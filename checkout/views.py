@@ -62,24 +62,43 @@ def checkout(request):
                 try:
                     product = Product.objects.get(id=item_id)
                     prints = (request.POST.get('prints'))
+                    print("PRINTS: ",prints)
                     if isinstance(item_data, int):
+                        print("HERE1")
                         order_line_item = OrderLineItem(
                             order=order,
                             product=product,
                             quantity=item_data,
+                            prints=any
                         )
                         order_line_item.save()
                     else:
-                        for size, prints, quantity in item_data['items_by_size'].items():
+                        print("HERE2")
+                        print("PRINTS2: ",prints)
+                        
+                        for size in item_data['items_by_size'].values():
+                            print("HERE5", item_data['items_by_size'].values())
+                            print("HERE5", size)
                             order_line_item = OrderLineItem(
-                                order=order,
-                                product=product,
-                                quantity=quantity,
-                                product_size=size,
-                                prints=prints,
-                            )
-                            print("order_line_item 1 :", order_line_item)
-                            order_line_item.save()
+                                            order=order,
+                                            product=product,
+                                            product_size=size,    
+                                        )
+
+                            for prints in size.values():
+                                print("HERE6", prints)
+                                order_line_item = OrderLineItem(
+                                        prints=prints,    
+                                        )
+
+                                for  quantity in prints.values():
+                                        print("HERE7",quantity)
+                                        order_line_item = OrderLineItem(
+                                            quantity=quantity,
+                                           # product_size=size,
+                                           # prints=prints,    
+                                        )
+                                        order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your bag wasn't found in our database. "
