@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category, Artist, PrintOptions
+from .models import Product, Category, Artist
 
 
 class ArtistAdmin(admin.ModelAdmin):
@@ -23,7 +23,6 @@ class ProductAdmin(admin.ModelAdmin):
         'artistname',
         'name',
         'description',
-        'motivation',
         'program',
         'has_sizes',
         'price',
@@ -32,17 +31,8 @@ class ProductAdmin(admin.ModelAdmin):
         'image',
     )
 
-class PrintOptionsAdmin(admin.ModelAdmin):
-    list_display = (
-        'name',
-        'printname',
-        'has_frame',
-        'has_mattfinish',
-        'has_signature',
-    )
 
 
 admin.site.register(Artist, ArtistAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Product, ProductAdmin)
-admin.site.register(PrintOptions, PrintOptionsAdmin)

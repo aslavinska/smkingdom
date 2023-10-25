@@ -40,7 +40,6 @@ class Migration(migrations.Migration):
                 ('sku', models.CharField(blank=True, max_length=254, null=True)),
                 ('name', models.CharField(max_length=100)),
                 ('description', models.TextField()),
-                ('motivation', models.TextField()),
                 ('program', models.CharField(max_length=100)),
                 ('has_sizes', models.BooleanField(blank=True, default=False, null=True)),
                 ('price', models.DecimalField(decimal_places=2, max_digits=6)),
@@ -49,17 +48,6 @@ class Migration(migrations.Migration):
                 ('image', models.ImageField(blank=True, null=True, upload_to='')),
                 ('artistname', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='artist', to='products.Artist')),
                 ('category', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='products.Category')),
-            ],
-        ),
-        migrations.CreateModel(
-            name='PrintOptions',
-            fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=100)),
-                ('has_frame', models.BooleanField(blank=True, default=False, null=True)),
-                ('has_mattfinish', models.BooleanField(blank=True, default=False, null=True)),
-                ('has_signature', models.BooleanField(blank=True, default=False, null=True)),
-                ('printname', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='products.Product')),
             ],
         ),
     ]

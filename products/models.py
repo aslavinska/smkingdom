@@ -31,7 +31,6 @@ class Product(models.Model):
     artistname = models.ForeignKey(Artist, on_delete=models.CASCADE, related_name='artist')
     name = models.CharField(max_length=100)
     description = models.TextField()
-    motivation = models.TextField()
     program = models.CharField(max_length=100)
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
@@ -42,13 +41,3 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
-
-class PrintOptions(models.Model):
-    name = models.CharField(max_length=100)
-    printname = models.ForeignKey('Product', null=True, blank=True, on_delete=models.SET_NULL)
-    has_frame = models.BooleanField(default=False, null=True, blank=True)
-    has_mattfinish = models.BooleanField(default=False, null=True, blank=True)
-    has_signature = models.BooleanField(default=False, null=True, blank=True)
-
-    def __str__(self):
-        return self.name
