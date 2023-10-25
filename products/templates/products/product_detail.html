@@ -42,6 +42,12 @@
                     {% else %}
                         <small class="text-muted">No Rating</small>
                     {% endif %}
+                    <br>
+                    {% if product.artistname %}
+                    <small class="text-muted"><i class="fas fa-book mr-1"></i>{{ product.artistname }}</small>
+                    {% else %}
+                        <small class="text-muted">No Name available</small>
+                    {% endif %}
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
                             <a href="{% url 'edit_product' product.id %}">Edit</a> | 
