@@ -242,6 +242,8 @@ The live link can be found here - [Silver Moon Kingdom](https://sm-kingdom-8e520
 The code example for layout and social media links was taken from Code Institute Boutique Project. 
 The template for the Read.me file has been taked from Code Institute. 
 Manual Test Examples can be found [here.](https://onlinetestcase.com/test-cases-for-pagination/)
+Django blog application tutorial can be found [here.](https://djangocentral.com/building-a-blog-application-with-django/)
+Django commet system tutorial can be found [here.](https://djangocentral.com/creating-comments-system-with-django/)
 
 ## Media
 All images in the blog and main pages were take from private Sailor Shushu official archives. All rights reserved.
