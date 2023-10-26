@@ -179,8 +179,8 @@ input[name='q']::placeholder {
 #mc_embed_signup {
     background: #ffffff49;
     clear: left;
-    font: 14px Helvetica, Arial, sans-serif;
-    width: 600px;
+    font-family: 'Lato';
+    width: 550px;
 }
 
 /* -------------------------------- Media Queries */
