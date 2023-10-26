@@ -118,7 +118,7 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
 
 # Custom Models:
 ERD:
-![ERD](media/ERD.png)
+![ERD](media/ERD.JPG)
 
 # Testing
  - I have tested this page in brosers: Chrome and Firefox.
