@@ -177,8 +177,10 @@ ERD:
     2. Verified that images are loading on the deployed page 
     ![AWS](media/AWSS3.png)
 
- ## Bugs 
-    - No known bugs
+ ### Bugs 
+
+am I responsive [website](https://ui.dev/amiresponsive?url=https://sm-kingdom-8e52019dc777.herokuapp.com/) for deployed project doesn't return the deployed webpage, however the generator works fine with the local build. 
+This issue has been checked by CI student technical support team and they were not able to explain the behaviour and assist with fixing it, so the screenshot fpr am I responsive has been done using the locally deployed app. 
 
  ### Solved bugs
     - When users were trying to register the page was returning error 500, that was fixed by adding ACCOUNT_EMAIL_VERIFICATION as none. 

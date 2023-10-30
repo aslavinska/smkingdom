@@ -44,9 +44,11 @@
                     {% endif %}
                     <br>
                     {% if product.artistname %}
-                    <small class="text-muted"><i class="fas fa-book mr-1"></i>{{ product.artistname }}</small>
-                    {% else %}
-                        <small class="text-muted">No Name available</small>
+                    <p class="small mt-1 mb-0">
+                        <a class="text-muted" href="{% url 'products' %}?artistname={{ product.artistname }}">
+                            <i class="fas fa-book mr-1"></i>{{ product.artistname }}
+                        </a>
+                    </p>
                     {% endif %}
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
