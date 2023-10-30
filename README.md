@@ -40,6 +40,7 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
     - The other navigation links are: All Products, Pins & Stickers and Prints, Login/Logout and Register options. 
         - When logged as admin also see Product Management drop down and Artist Managemenet drop down. 
         - When logged in as user see My Profile drop down option. 
+    - My blog page is visible each post can be expanded and users can leave comments on the posts that need to be reviewed and approved by an admin, before they can be visible. 
     - The navigation is in a font visible and readable for a user and color that contrasts with the background. 
     - The navigation clearly tells to the user the name of the website, and makes the different sections of information easy to find. 
     - Search bar is available on the top of the page
