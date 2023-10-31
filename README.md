@@ -247,6 +247,7 @@ The template for the Read.me file has been taked from Code Institute.
 Manual Test Examples can be found [here.](https://onlinetestcase.com/test-cases-for-pagination/)
 Django blog application tutorial can be found [here.](https://djangocentral.com/building-a-blog-application-with-django/)
 Django commet system tutorial can be found [here.](https://djangocentral.com/creating-comments-system-with-django/)
+Text for post examples has been taken [here.](https://www.lipsum.com/)
 
 ## Media
 All images in the blog and main pages were take from private Sailor Shushu official archives. All rights reserved.

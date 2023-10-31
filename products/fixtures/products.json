@@ -1,0 +1,131 @@
+[
+    {
+        "model": "products.artist",
+        "pk": 1,
+        "fields": {
+            "name": "Sailor Shushu",
+            "background": "Briths Artist \r\nDigital Art",
+            "email": "anastasija.slavinska@gmail.com",
+            "mainartstyle": "digital"
+        }
+    },
+    {
+        "model": "products.artist",
+        "pk": 2,
+        "fields": {
+            "name": "Test",
+            "background": "Test",
+            "email": "wedihiy560@ustorp.com",
+            "mainartstyle": "Anime"
+        }
+    },
+    {
+        "model": "products.artist",
+        "pk": 3,
+        "fields": {
+            "name": "Pillara",
+            "background": "Digital Artist with more than 10 years of expierence",
+            "email": "pillara@gmail.com",
+            "mainartstyle": "digital"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 1,
+        "fields": {
+            "name": "pin",
+            "friendly_name": "Pin"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 2,
+        "fields": {
+            "name": "stickers",
+            "friendly_name": "Stickers"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 3,
+        "fields": {
+            "name": "clearance",
+            "friendly_name": "Clearance"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 4,
+        "fields": {
+            "name": "deals",
+            "friendly_name": "Deals"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 5,
+        "fields": {
+            "name": "prints",
+            "friendly_name": "Prints"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 6,
+        "fields": {
+            "name": "new_arrivals",
+            "friendly_name": "New Arrivals"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 1,
+        "fields": {
+            "category": 1,
+            "sku": "moon-cat-pin",
+            "artistname": 1,
+            "name": "Moon Cat Pin",
+            "description": "Moon Cat Pin Description",
+            "program": "Procreate",
+            "has_sizes": false,
+            "price": "5.00",
+            "rating": "4.90",
+            "image_url": "https://silvermoonkingdom.s3.eu-west-1.amazonaws.com/static/assets/2023-09-06+13_45_11-New+stickers+%F0%9F%92%96%F0%9F%8C%9F+_+Instagram.png",
+            "image": "moon_pin.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 2,
+        "fields": {
+            "category": 2,
+            "sku": "moon-cat-sticker",
+            "artistname": 1,
+            "name": "Moon Cat Stickers",
+            "description": "Moon Cat Stickers Description",
+            "program": "Procreate",
+            "has_sizes": false,
+            "price": "6.00",
+            "rating": "4.80",
+            "image_url": "https://silvermoonkingdom.s3.eu-west-1.amazonaws.com/media/2023-09-06+13_45_11-New+stickers+%F0%9F%92%96%F0%9F%8C%9F+_+Instagram.png",
+            "image": "2023-09-06_13_45_11-New_stickers____Instagram.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 3,
+        "fields": {
+            "category": 5,
+            "sku": "priness-wales",
+            "artistname": 1,
+            "name": "The Wales Princess",
+            "description": "The Wales Princess Description",
+            "program": "Procreate",
+            "has_sizes": true,
+            "price": "30.00",
+            "rating": "5.00",
+            "image_url": "https://silvermoonkingdom.s3.eu-west-1.amazonaws.com/media/intro.jpg",
+            "image": "intro.jpg"
+        }
+    }
+]
