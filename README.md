@@ -14,6 +14,7 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
 
 * Who are your users?
     - Sailor Shushu Artist Fans
+    - B2C business model
 * Which online platforms would you find lots of your users?
     - Instagram and Facebook
 * What do your users need? 
@@ -224,11 +225,18 @@ No unfixed bugs that have been identified.
 # Deployment 
 
 The site was deployed to Heroku using followin steps:
-1. Debug flag in setting.py is set to False
-2. AWS settings were added to settings.py file and S3 bucket with user and group permission was created in AWS. 
-3. Everything added, committed and pushed to github. 
-4. Disable collecstatic variable has been removed from the heroku app config vars list
-5. In Heroku project in the deploy tab the main branch has been deployed. 
+- Clone the project from Github using git clone command.
+- Install all the required packages using pip3 install -r requirements.txt
+- When deployin and running application locally in settings.py in smkingdom folder set debug to True, otherwise always as False on production. 
+- Debug flag in setting.py is set to False
+- Create a new app in Heroku, the app name needs to be unique, [detailed tutorial on how to create heroku app here](https://devcenter.heroku.com/articles/creating-apps)
+- Connect Heroku and Github project repository 
+- Configure AWS account and create S3 Service new bucket tutorial can be found [here](https://devcenter.heroku.com/articles/creating-apps)
+- Add AWS settings to settings.py file and S3 bucket with user and group permission was created in AWS. 
+- Create and configure stripe account and stripe [webhooks](https://stripe.com/docs/webhooks), tutorial on how to setup and deploy Stripe can be found [here/](https://stripe.com/docs/webhooks/quickstart?locale=en-GB)
+- Everything added, committed and pushed to github. 
+- Disable collecstatic variable has been removed from the heroku app config vars list
+- In Heroku project in the deploy tab the main branch has been deployed. 
 
 The live link can be found here - [Silver Moon Kingdom](https://sm-kingdom-8e52019dc777.herokuapp.com/).
 

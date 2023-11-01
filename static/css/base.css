@@ -7,7 +7,9 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #000000;
-    font-family: 'Lato';
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Great Vibes', cursive;
 }
 
 /* from Bulma */
@@ -71,7 +73,7 @@ body {
 }
 
 .bg-black {
-    background: #9a5c9c !important;
+    background: #9a5c9c94 !important;
 }
 
 .overlay {
@@ -179,7 +181,7 @@ input[name='q']::placeholder {
 #mc_embed_signup {
     background: #ffffff49;
     clear: left;
-    font-family: 'Lato';
+    font-family: 'Agbalumo';
     width: 550px;
 }
 
