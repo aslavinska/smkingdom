@@ -10,11 +10,13 @@ class ArtistAdmin(admin.ModelAdmin):
         'email',
     )
 
+
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
         'name',
     )
+
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
@@ -30,7 +32,6 @@ class ProductAdmin(admin.ModelAdmin):
         'image_url',
         'image',
     )
-
 
 
 admin.site.register(Artist, ArtistAdmin)

@@ -50,7 +50,7 @@ body {
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: rgb(85, 65, 76);
+    background: rgb(58, 42, 51);
     color: white !important;
 }
 
@@ -65,15 +65,15 @@ body {
 }
 
 .text-black {
-    color: #5e2f79 !important;
+    color: #3f2052 !important;
 }
 
 .border-black {
-    border: 1px solid rgb(58, 34, 90) !important;
+    border: 1px solid rgb(37, 22, 56) !important;
 }
 
 .bg-black {
-    background: #9a5c9c94 !important;
+    background: #211422d0 !important;
 }
 
 .overlay {
@@ -106,7 +106,7 @@ a.category-badge>span.badge:hover {
 }
 
 input[name='q']::placeholder {
-    color: #687685;
+    color: #1a232c;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -229,8 +229,8 @@ input[name='q']::placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #691e6b;
-    border: 1px solid #d286f5;
+    background-color: #431944;
+    border: 1px solid #e0b0f7;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;

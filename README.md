@@ -205,6 +205,14 @@ This issue has been checked by CI student technical support team and they were n
 - JS 
     - No errors were found using [jshint validator](https://jshint.com/)
 
+-Python Validation
+    - was used using python3 -m flake8 command in the terminal
+        Present errors: E501 line too long - left on purpose as not dangerous for the code
+                        F401 - 'checkout.signals' imported but unused - this import is required for stripe payment to work
+                        F841 local variable 'e' is assigned to but never used - required for error catching 
+                        F401 'env' imported but unused - required for env variable in local build 
+                        F811 redefinition of unused 'handler404' from line 5 - required for 404 custom page in the live app. 
+
 ## Manual Testing
 
 - Every page has been manually tested:
