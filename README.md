@@ -52,19 +52,18 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
     - The header shows the name of the app, using the other color chosen: Shade of purple with stylish font theme. 
     - This section provides the user with clear information about what the site is and who is the targetted audience. 
     - When clicked on the website name, the user is taken back to the main page. 
-    ![MainPage](media/mainpage.jpg)
 
 
 - **Online Shop**
     - One-time sale model is used
     - Business to client model, where the art creater sales her art directly to her fans. 
     - 3 product types are available: Pins, Stickers and Prints. 
-        - For Prints user can select print size and print option.
+        - For Prints user can select print size.
         - a buyer can arrange products by price, category, rating or select all products in All products drop down manus.
         - a buyer can select products based on their group: just see pins, stickers or prints in Products drop down menu. 
 
 - **Product Details**
-    In the product details page now users can see category of the product and an artist name, both can be clicked and the link will open all products under the same category or atist.
+    In the product details page now users can see category of the product.
     Also, in prints users can see prinst print options and can select what print options they want before checking out the print. 
     ![Product Details](media/product_details.png)
 
@@ -77,7 +76,8 @@ The official website of a British Artist Sailor Shushu online shop Silver Moon K
 - **Artist Management Section**
     - The about section gives details background about artist and motivation behind each art.
     - Admin can add new artists without login to the admin page. 
-    ![Artist Management ](media/artist_management.png)
+    
+    ![Artist Management ](media/artist_management.jpg)
 
 
 - **Basket Section**
