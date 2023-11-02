@@ -158,12 +158,14 @@ ERD:
     1. Verified that all fields are responsive and the required fields will not allow to submit the form unless filled in.
     2. Stripe payment testing mode is working as expected.
     3. Verified that new order appears in the Order Model after clicking submit. 
-    ![Order Complete](static/assets/complete_order.png)
+    ![Order Complete](media/complete_order.png)
 
     # Stripe
     - **Webhooks**
     Stripe is used for handeling payments, webhooks setup can be found below: 
-    ![Webhooks](media/webhooks.jpg)
+    ![Webhooks](media/weebhooks.png)
+    Payment Logs:
+    ![Payment Logs](media/stripe_logs.png)
     
 - Email Subscription Newsletter 
     1. Verified that after clicking submit the user will receive an email confirmation
@@ -196,6 +198,7 @@ This issue has been checked by CI student technical support team and they were n
     - Every page has been checked and no errors or warnings have been highlighted. 
 - CSS 
     - No errors were returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/).
+
     ![CSS Validator](static/assets/cssvalidator.jpg)
 
 - Accessibility
@@ -205,13 +208,14 @@ This issue has been checked by CI student technical support team and they were n
 - JS 
     - No errors were found using [jshint validator](https://jshint.com/)
 
--Python Validation
-    - was used using python3 -m flake8 command in the terminal
-        Present errors: E501 line too long - left on purpose as not dangerous for the code
-                        F401 - 'checkout.signals' imported but unused - this import is required for stripe payment to work
-                        F841 local variable 'e' is assigned to but never used - required for error catching 
-                        F401 'env' imported but unused - required for env variable in local build 
-                        F811 redefinition of unused 'handler404' from line 5 - required for 404 custom page in the live app. 
+- Python Validation
+    Was used using python3 -m flake8 command in the terminal
+    Present errors: 
+    - E501 line too long - left on purpose as not dangerous for the code
+    - F401 - 'checkout.signals' imported but unused - this import is required for stripe payment to work
+    - F841 local variable 'e' is assigned to but never used - required for error catching 
+    - F401 'env' imported but unused - required for env variable in local build 
+    - F811 redefinition of unused 'handler404' from line 5 - required for 404 custom page in the live app. 
 
 ## Manual Testing
 
@@ -258,12 +262,12 @@ The live link can be found here - [Silver Moon Kingdom](https://sm-kingdom-8e520
 # Credits
 
 ## Content
-The code example for layout and social media links was taken from Code Institute Boutique Project. 
-The template for the Read.me file has been taked from Code Institute. 
-Manual Test Examples can be found [here.](https://onlinetestcase.com/test-cases-for-pagination/)
-Django blog application tutorial can be found [here.](https://djangocentral.com/building-a-blog-application-with-django/)
-Django commet system tutorial can be found [here.](https://djangocentral.com/creating-comments-system-with-django/)
-Text for post examples has been taken [here.](https://www.lipsum.com/)
+- The code example for layout and social media links was taken from Code Institute Boutique Project. 
+- The template for the Read.me file has been taked from Code Institute. 
+- Manual Test Examples can be found [here.](https://onlinetestcase.com/test-cases-for-pagination/)
+- Django blog application tutorial can be found [here.](https://djangocentral.com/building-a-blog-application-with-django/)
+- Django commet system tutorial can be found [here.](https://djangocentral.com/creating-comments-system-with-django/)
+- Text for post examples has been taken [here.](https://www.lipsum.com/)
 
 ## Media
 All images in the blog and main pages were take from private Sailor Shushu official archives. All rights reserved.
