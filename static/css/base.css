@@ -7,9 +7,8 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #000000;
-    font-family: 'Edu TAS Beginner', cursive;
-    font-family: 'Frank Ruhl Libre', serif;
-    font-family: 'Great Vibes', cursive;
+    font: italic small-caps bold Georgia, sans-serif; /* fallback for older browsers */
+    font: ultra-condensed italic small-caps bold Georgia, sans-serif;
 }
 
 /* from Bulma */
@@ -181,7 +180,7 @@ input[name='q']::placeholder {
 #mc_embed_signup {
     background: #ffffff49;
     clear: left;
-    font-family: 'Agbalumo';
+    font-family: 'Pacifico';
     width: 550px;
 }
 
